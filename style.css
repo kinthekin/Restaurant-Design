@@ -1,0 +1,69 @@
+body {
+    background-image: url("colosseum.jpg"); background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-item img {
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.image-item figcaption {
+    margin-top: 25px;
+    font-size: 40px;
+    color: orange;
+    text-align: center;
+}
+
+
+@media (max-width: 350px) {
+    .image-item {
+        flex-direction: row;
+    }
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-item img {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+@media (max-width: 350px) {
+    .image-item {
+        flex-direction: column;
+    }
+}
+
+p{
+    font-size: 25px;
+    color: orange;
+}
